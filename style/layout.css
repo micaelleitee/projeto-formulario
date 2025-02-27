@@ -45,7 +45,6 @@ aside {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  /* width: 35rem; */
 }
 
 .main-container span:nth-child(1) {
@@ -69,6 +68,17 @@ aside {
   }
 }
 
+#forms {
+  display: grid;
+  grid-template-areas:
+    "input input"
+    "data data"
+    "radio input"
+    "location location";
+  grid-template-columns: 1fr 1fr; /* Duas colunas */
+  grid-template-rows: auto auto auto auto; /* Quatro linhas */
+}
+
 .infos-txt {
   display: flex;
   flex-direction: column;
@@ -79,6 +89,8 @@ aside {
   & label {
     font: var(--body-sm);
     color: var(--text-body);
+    padding: 10px;
+    align-items: center;
   }
 
   & input {
@@ -89,7 +101,57 @@ aside {
     padding: 1rem;
     color: var(--input-placeholder);
   }
+
+  & textarea {
+    background-color: var(--input-base);
+    border: solid 1px var(--input-stroke);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    color: var(--input-placeholder);
+  }
+
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(../assets/icons/calendar.svg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--brand-light);
+}
+.date-inicial {
+  width: 17rem;
+}
+
+.toggle {
+  display: flex;
+  background: #222;
+  padding: 5px;
+  border-radius: 8px;
+  gap: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked + label {
+  background: var(--shape-button);
+  border-radius: 8px;
+  color: var(--text-heading);
+  & svg {
+    stroke: var(--brand-light);
+  }
+}
+
+input[type="radio"]::before {
+  & svg {
+    stroke: var(--input-placeholder);
+  }
 }

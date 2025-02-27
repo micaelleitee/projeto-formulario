@@ -42,29 +42,74 @@
               <span class="heading-sm">Sobre o evento</span>
             </div>
             <form class="infos-txt">
-              <div class="div-text">
+              <div class="div-text input">
                 <label for="title">Título</label>
                 <input id="title" type="text" placeholder="Nome do evento">
               </div>
-              <div class="flex gap">
-                <div class="div-text">
+              <div class="flex gap data">
+                <div class="div-text width">
                   <label for="date" class="">Início</label>
                   <input id="date" type="date" placeholder="DD/MM/AAAA">
                 </div>
-                <div class="div-text">
-                  <label for="date" class="">Fim</label>
-                  <input id="date" type="date" placeholder="DD/MM/AAAA">
+                <div class="div-text width ">
+                  <label for="fim" class="">Fim</label>
+                  <input id="fim" type="date" placeholder="DD/MM/AAAA">
                 </div>
+              </div>
+              <div class="div-text radio">
+                <label for="tipo">Tipo</label>
+                <div class=" box flex">
 
+                  <div class="div-text width">
+                    <input type="radio" id="presencial" name="tipo" checked>
+                    <label for="presencial" class="align">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-building-2">
+                        <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" />
+                        <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+                        <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" />
+                        <path d="M10 6h4" />
+                        <path d="M10 10h4" />
+                        <path d="M10 14h4" />
+                        <path d="M10 18h4" />
+                      </svg>
+                      Presencial
+                    </label>
+                  </div>
+
+                  <div class="div-text width">
+                    <input type="radio" id="online" name="tipo">
+                    <label for="online" class="align">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-video">
+                        <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5" />
+                        <rect x="2" y="6" width="14" height="12" rx="2" />
+                      </svg>
+                      Online
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+              <div class="div-text location">
+                <label for="local" class="">Local</label>
+                <input id="local" type="text" placeholder="Link ou endereço">
+              </div>
+              <div class="div-text description">
+                <label for="desc">Descrição</label>
+                <textarea id="desc" rows="4" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </form>
-          </section>
-          <section class="section-customization"></section>
-          <search class="section-contact"></search>
-          <footer></footer>
         </div>
+        </section>
+        <section class="section-customization"></section>
+        <search class="section-contact"></search>
+        <footer></footer>
       </div>
-    </main>
+  </div>
+  </main>
   </div>
 
 </body>

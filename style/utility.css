@@ -38,3 +38,48 @@
 .color-pink {
   color: var(--color-pink);
 }
+
+.width {
+  width: 100%;
+}
+
+.box {
+  border: solid 1px var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--input-base);
+  padding: 0.25rem;
+  width: 30rem;
+}
+
+.align {
+  gap: 0.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-areas:
+    "input input"
+    "data data"
+    "radio input"
+    "location location";
+}
+
+.input {
+  grid-area: input;
+}
+
+.data {
+  grid-area: data;
+}
+
+.radio {
+  grid-area: radio;
+}
+
+.location {
+  grid-area: location;
+}
