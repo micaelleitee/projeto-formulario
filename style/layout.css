@@ -22,10 +22,19 @@ aside {
   overflow-y: auto;
 }
 
+.aside-container {
+  & label {
+    color: var(--text-heading);
+  }
+  padding: 2rem;
+}
+
 .title {
+  & label {
+    color: var(--text-heading);
+  }
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
 .title img {
