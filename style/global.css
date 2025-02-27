@@ -29,14 +29,19 @@
   --text-heading: #f9f9f9;
 
   --font-family-lec: "Leckerli One", serif;
-  --title-logo: 40px / auto var(--font-family-lec);
+  --title-logo: 40px var(--font-family-lec);
 
   --font-family-baloo: "Baloo 2", serif;
-  --heading-md: 800 28px / auto var(--font-family-lec);
-  --heading-sm: 800 18px / auto var(--font-family-baloo);
+  --heading-md: 800 28px var(--font-family-baloo);
+  --heading-sm: 800 18px var(--font-family-baloo);
 
   --font-family-open: "Open Sans", serif;
-  --body-md: 100 16px / auto var(--font-family-open);
-  --body-sm: 100 14px / auto var(--font-family-open);
-  --body-xs: 100 12px / auto var(--font-family-open);
+  --body-md: 100 16px var(--font-family-open);
+  --body-sm: 100 14px var(--font-family-open);
+  --body-xs: 100 12px var(--font-family-open);
+}
+
+body {
+  background-color: var(--shape-background);
+  overflow: hidden;
 }

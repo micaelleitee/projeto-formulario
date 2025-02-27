@@ -1,0 +1,40 @@
+.title-logo {
+  font: var(--title-logo);
+}
+
+.heading-md {
+  font: var(--heading-md);
+}
+
+.heading-sm {
+  font: var(--heading-sm);
+}
+
+.body-md {
+  font: var(--body-md);
+}
+
+.body-sm {
+  font: var(--body-sm);
+}
+
+.body-xs {
+  font: var(--body-xs);
+}
+
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.color-pink {
+  color: var(--color-pink);
+}

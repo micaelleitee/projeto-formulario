@@ -1,4 +1,86 @@
 #app {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 31.25% 68.75%;
+  height: 100vh;
+  overflow: hidden;
+  gap: 1.25rem;
+  margin: 1.25rem;
+}
+
+main {
+  border-radius: 12px;
+  overflow: auto;
+  background-color: var(--shape-body);
+  padding: 5rem 8.125rem;
+}
+
+aside {
+  border-radius: 12px;
+  background-image: url(../assets/img/image.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow-y: auto;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.title img {
+  width: 2.81rem;
+}
+.main-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  /* width: 35rem; */
+}
+
+.main-container span:nth-child(1) {
+  color: var(--text-heading);
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 0.75rem;
+
+  & span {
+    color: var(--text-heading);
+  }
+}
+
+.infos-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.div-text {
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & input {
+    background-color: var(--input-base);
+    border: solid 1px var(--input-stroke);
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding: 1rem;
+    color: var(--input-placeholder);
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }

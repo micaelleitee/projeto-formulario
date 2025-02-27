@@ -17,10 +17,52 @@
 <body>
   <div id="app">
     <aside>
-      <div class="aside-container"></div>
+      <div class="aside-container">
+        <div class="title gap">
+          <img src="assets/icons/Logo.svg" alt="">
+          <strong class="title-logo color-pink">Festivite</strong>
+        </div>
+      </div>
     </aside>
     <main>
-      <div class="main-container"></div>
+      <div class="main-container">
+        <span class="heading-md">Crie seu convite</span>
+        <div id="forms">
+          <section class="section-text">
+            <div class="about">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#869198" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-calendar">
+                <path d="M8 2v4" />
+                <path d="M16 2v4" />
+                <rect width="18" height="18" x="3" y="4" rx="2" />
+                <path d="M3 10h18" />
+              </svg>
+              <span class="heading-sm">Sobre o evento</span>
+            </div>
+            <form class="infos-txt">
+              <div class="div-text">
+                <label for="title">Título</label>
+                <input id="title" type="text" placeholder="Nome do evento">
+              </div>
+              <div class="flex gap">
+                <div class="div-text">
+                  <label for="date" class="">Início</label>
+                  <input id="date" type="date" placeholder="DD/MM/AAAA">
+                </div>
+                <div class="div-text">
+                  <label for="date" class="">Fim</label>
+                  <input id="date" type="date" placeholder="DD/MM/AAAA">
+                </div>
+
+              </div>
+            </form>
+          </section>
+          <section class="section-customization"></section>
+          <search class="section-contact"></search>
+          <footer></footer>
+        </div>
+      </div>
     </main>
   </div>
 
