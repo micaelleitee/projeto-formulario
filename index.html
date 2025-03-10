@@ -28,7 +28,7 @@
     <main>
       <div class="main-container">
         <span class="heading-md">Crie seu convite</span>
-        <div id="forms">
+        <fieldset id="forms">
           <section class="section-text">
             <div class="about">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -41,11 +41,16 @@
               </svg>
               <span class="heading-sm">Sobre o evento</span>
             </div>
+
+            <!-- Título -->
             <form class="infos-txt">
               <div class="div-text input">
                 <label for="title">Título</label>
                 <input id="title" type="text" placeholder="Nome do evento">
               </div>
+
+              <!-- Data Início e Fim -->
+
               <div class="flex gap data">
                 <div class="div-text width">
                   <label for="date" class="">Início</label>
@@ -56,10 +61,12 @@
                   <input id="fim" type="date" placeholder="DD/MM/AAAA">
                 </div>
               </div>
-              <div class="div-text radio">
+
+              <!-- Tipo (Presencial ou Online) -->
+
+              <div class="div-text">
                 <label for="tipo">Tipo</label>
                 <div class=" box flex">
-
                   <div class="div-text width">
                     <input type="radio" id="presencial" name="tipo" checked>
                     <label for="presencial" class="align">
@@ -77,7 +84,6 @@
                       Presencial
                     </label>
                   </div>
-
                   <div class="div-text width">
                     <input type="radio" id="online" name="tipo">
                     <label for="online" class="align">
@@ -90,23 +96,102 @@
                       Online
                     </label>
                   </div>
-
                 </div>
               </div>
+
+
+              <!-- Localização -->
               <div class="div-text location">
                 <label for="local" class="">Local</label>
                 <input id="local" type="text" placeholder="Link ou endereço">
               </div>
+
+              <!-- Descrição do evento -->
               <div class="div-text description">
                 <label for="desc">Descrição</label>
                 <textarea id="desc" rows="4" placeholder="Escreva sobre os detalhes do evento"></textarea>
               </div>
             </form>
-        </div>
-        </section>
-        <section class="section-customization"></section>
-        <search class="section-contact"></search>
-        <footer></footer>
+          </section>
+          <section class="section-customization">
+            <div class="customize">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-paintbrush-vertical">
+                <path d="M10 2v2" />
+                <path d="M14 2v4" />
+                <path d="M17 2a1 1 0 0 1 1 1v9H6V3a1 1 0 0 1 1-1z" />
+                <path
+                  d="M6 12a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a1 1 0 0 1 1 1v2.9a2 2 0 1 0 4 0V17a1 1 0 0 1 1-1h2a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1" />
+              </svg>
+              <span class="heading-sm">Personalização</span>
+            </div>
+            <form>
+              <div class="colors">
+                <label class="body-sm">Cor principal</label>
+                <div class="itens-colors flex">
+                  <div>
+                    <label class="check-color-01">
+                      <input type="radio" name="primary-color" value="">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-02">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-03">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-04">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-05">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-06">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-07">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-08">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-09">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-10">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                  <div>
+                    <label class="check-color-11">
+                      <input type="radio" name="primary-color">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+          <search class="section-contact"></search>
+          <footer></footer>
+        </fieldset>
       </div>
   </div>
   </main>

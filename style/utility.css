@@ -48,24 +48,13 @@
   border-radius: 0.5rem;
   background-color: var(--input-base);
   padding: 0.25rem;
-  width: 30rem;
 }
 
 .align {
   gap: 0.5rem;
   display: flex;
-  justify-items: center;
   align-items: center;
   justify-content: center;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-areas:
-    "input input"
-    "data data"
-    "radio input"
-    "location location";
 }
 
 .input {
@@ -83,3 +72,8 @@
 .location {
   grid-area: location;
 }
+
+.description {
+  grid-area: description;
+}
+

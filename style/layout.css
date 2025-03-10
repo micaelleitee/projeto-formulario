@@ -1,32 +1,37 @@
 #app {
   display: grid;
-  grid-template-columns: 31.25% 68.75%;
+  grid-template-columns: 30% 70%;
   height: 100vh;
   overflow: hidden;
   gap: 1.25rem;
-  margin: 1.25rem;
+  margin: 1.25rem auto;
+  max-width: 1280px;
 }
 
 main {
   border-radius: 12px;
   overflow: auto;
   background-color: var(--shape-body);
-  padding: 5rem 8.125rem;
+  padding: 3rem 6rem;
 }
 
 aside {
   border-radius: 12px;
   background-image: url(../assets/img/image.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   overflow-y: auto;
 }
 
 .aside-container {
+  padding: 2rem;
   & label {
     color: var(--text-heading);
   }
-  padding: 2rem;
+}
+
+fieldset {
+  border: none;
 }
 
 .title {
@@ -57,6 +62,12 @@ aside {
   gap: 1.5rem;
 }
 
+#forms {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -68,21 +79,16 @@ aside {
   }
 }
 
-#forms {
-  display: grid;
-  grid-template-areas:
-    "input input"
-    "data data"
-    "radio input"
-    "location location";
-  grid-template-columns: 1fr 1fr; /* Duas colunas */
-  grid-template-rows: auto auto auto auto; /* Quatro linhas */
-}
-
 .infos-txt {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  grid-template-rows: auto auto auto auto; /* 4 linhas */
+  gap: 20px; /* Espaçamento entre os elementos */
+  grid-template-areas:
+    "input input" /* Título ocupa as duas colunas */
+    "data data" /* Datas ocupam as duas colunas */
+    "radio location" /* Tipo na esquerda, Local na direita */
+    "description description"; /* Descrição ocupa as duas colunas */
 }
 
 .div-text {
@@ -126,22 +132,12 @@ select:focus,
 textarea:focus {
   outline: 1px solid var(--brand-light);
 }
-.date-inicial {
-  width: 17rem;
-}
-
-.toggle {
-  display: flex;
-  background: #222;
-  padding: 5px;
-  border-radius: 8px;
-  gap: 5px;
-}
 
 input[type="radio"] {
   display: none;
 }
-input[type="radio"]:checked + label {
+
+.div-text input[type="radio"]:checked + label {
   background: var(--shape-button);
   border-radius: 8px;
   color: var(--text-heading);
@@ -154,4 +150,98 @@ input[type="radio"]::before {
   & svg {
     stroke: var(--input-placeholder);
   }
+}
+
+.customize {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  & span {
+    color: var(--text-heading);
+  }
+
+  & svg {
+    stroke: var(--input-placeholder);
+  }
+}
+
+.section-customization {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & label {
+    color: #ffffff;
+  }
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.itens-colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itens-colors label {
+  width: 2.5rem; /* Círculo menor */
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 10px solid var(--shape-button);
+}
+
+.check-color-01 {
+  background-color: var(--brand-light);
+}
+
+.check-color-02 {
+  background-color: var(--color-navy);
+}
+
+.check-color-03 {
+  background-color: var(--color-purple);
+}
+
+.check-color-04 {
+  background-color: var(--color-fuschia);
+}
+
+.check-color-05 {
+  background-color: var(--color-pink);
+}
+
+.check-color-06 {
+  background-color: var(--color-danger);
+}
+
+.check-color-07 {
+  background-color: var(--color-orange);
+}
+
+.check-color-08 {
+  background-color: var(--color-yellow);
+}
+
+.check-color-09 {
+  background-color: var(--color-lime);
+}
+
+.check-color-10 {
+  background-color: var(--color-green);
+}
+
+.check-color-11 {
+  background-color: var(--color-cyan);
+}
+
+/* Quando selecionado, adiciona a borda */
+.itens-colors label:has([type="radio"]:checked) {
+  outline: 2px solid #48a3ff;
 }
