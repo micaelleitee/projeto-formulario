@@ -46,7 +46,17 @@
             <form class="infos-txt">
               <div class="div-text input">
                 <label for="title">Título</label>
-                <input id="title" type="text" placeholder="Nome do evento">
+                <input id="title" type="text" placeholder="Nome do evento" required>
+                <div class="error">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ff5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-alert">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <span class="body-xs">Campo obrigatório</span>
+                </div>
               </div>
 
               <!-- Data Início e Fim -->
@@ -69,7 +79,7 @@
                 <div class=" box flex">
                   <div class="div-text width">
                     <input type="radio" id="presencial" name="tipo" checked>
-                    <label for="presencial" class="align">
+                    <label for="presencial" class="align gap">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-building-2">
@@ -86,7 +96,7 @@
                   </div>
                   <div class="div-text width">
                     <input type="radio" id="online" name="tipo">
-                    <label for="online" class="align">
+                    <label for="online" class="align gap">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-video">
@@ -109,7 +119,19 @@
               <!-- Descrição do evento -->
               <div class="div-text description">
                 <label for="desc">Descrição</label>
-                <textarea id="desc" rows="4" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                <textarea id="desc" rows="4" placeholder="Escreva sobre os detalhes do evento" required>
+
+                </textarea>
+                <div class="error">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ff5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-alert">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <span class="body-xs">Campo obrigatório</span>
+                </div>
               </div>
             </form>
           </section>
@@ -126,13 +148,13 @@
               </svg>
               <span class="heading-sm">Personalização</span>
             </div>
-            <form>
+            <form class="form-customization">
               <div class="colors">
                 <label class="body-sm">Cor principal</label>
                 <div class="itens-colors flex">
                   <div>
                     <label class="check-color-01">
-                      <input type="radio" name="primary-color" value="">
+                      <input type="radio" name="primary-color">
                     </label>
                   </div>
                   <div>
@@ -187,10 +209,241 @@
                   </div>
                 </div>
               </div>
+              <div class="theme">
+                <label class="body-sm">Tema do evento</label>
+                <div class="itens-theme">
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage-.svg" alt="">
+                      <span class="body-sm">Aniversário</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--1.svg" alt="">
+                      <span class="body-sm">Infantil</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--2.svg" alt="">
+                      <span class="body-sm">Formulário</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--3.svg" alt="">
+                      <span class="body-sm">Casamento</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--4.svg" alt="">
+                      <span class="body-sm">Chá de bebe</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--5.svg" alt="">
+                      <span class="body-sm">Chá de panela</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--6.svg" alt="">
+                      <span class="body-sm">Carnaval</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--7.svg" alt="">
+                      <span class="body-sm">Páscoa</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--8.svg" alt="">
+                      <span class="body-sm">São João</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--9.svg" alt="">
+                      <span class="body-sm">Halloween</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--10.svg" alt="">
+                      <span class="body-sm">Natal</span>
+                    </figure>
+                  </label>
+                  <label>
+                    <input type="radio" name="tema">
+                    <figure class="card-item">
+                      <img src="assets/img/Imageimage--11.svg" alt="">
+                      <span class="body-sm">Outro</span>
+                    </figure>
+                  </label>
+                </div>
+              </div>
+              <div class="flex gap">
+                <div class="switch-toggle">
+                  <label class="body-sm">Estilo</label>
+                  <div class="flex gap align itens-switch">
+                    <input type="checkbox" class="option-input">
+                    <label class="body-sm">Escuro</label>
+                  </div>
+                </div>
+                <div class="file-input">
+                  <label class="body-sm">Foto de capa</label>
+                  <div class="flex gap">
+                    <label for="file" class="choose-file body-sm align gap-05  button-file">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#59b2ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-upload">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="17 8 12 3 7 8" />
+                        <line x1="12" x2="12" y1="3" y2="15" />
+                      </svg>
+                      <input type="file" id="file" required>
+                      <strong>Selecionar</strong>
+                    </label>
+                    <label class="body-md align">
+                      Nenhum arquivo selecionado
+                    </label>
+                  </div>
+                </div>
+              </div>
             </form>
           </section>
-          <search class="section-contact"></search>
-          <footer></footer>
+          <search class="section-contact">
+            <div class="txt-contact gap flex">
+              <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 0.25C6.41421 0.25 6.75 0.585786 6.75 1V2.25H13.25V1C13.25 0.585786 13.5858 0.25 14 0.25C14.4142 0.25 14.75 0.585786 14.75 1V2.25H17C18.5188 2.25 19.75 3.48122 19.75 5V19C19.75 20.5188 18.5188 21.75 17 21.75H3C1.48122 21.75 0.25 20.5188 0.25 19V5C0.25 3.48122 1.48122 2.25 3 2.25H5.25V1C5.25 0.585786 5.58579 0.25 6 0.25ZM3 3.75C2.30964 3.75 1.75 4.30964 1.75 5V19C1.75 19.6904 2.30964 20.25 3 20.25H17C17.6904 20.25 18.25 19.6904 18.25 19V5C18.25 4.30964 17.6904 3.75 17 3.75H3ZM10 7.75C9.30964 7.75 8.75 8.30964 8.75 9C8.75 9.69036 9.30964 10.25 10 10.25C10.6904 10.25 11.25 9.69036 11.25 9C11.25 8.30964 10.6904 7.75 10 7.75ZM7.25 9C7.25 7.48122 8.48122 6.25 10 6.25C11.5188 6.25 12.75 7.48122 12.75 9C12.75 10.5188 11.5188 11.75 10 11.75C8.48122 11.75 7.25 10.5188 7.25 9ZM5.05546 15.0555C5.57118 14.5397 6.27065 14.25 7 14.25H13C13.7293 14.25 14.4288 14.5397 14.9445 15.0555C15.4603 15.5712 15.75 16.2707 15.75 17C15.75 17.4142 15.4142 17.75 15 17.75C14.5858 17.75 14.25 17.4142 14.25 17C14.25 16.6685 14.1183 16.3505 13.8839 16.1161C13.6495 15.8817 13.3315 15.75 13 15.75H7C6.66848 15.75 6.35054 15.8817 6.11612 16.1161C5.8817 16.3505 5.75 16.6685 5.75 17C5.75 17.4142 5.41421 17.75 5 17.75C4.58579 17.75 4.25 17.4142 4.25 17C4.25 16.2707 4.53973 15.5712 5.05546 15.0555Z"
+                  fill="#869198" />
+              </svg>
+              <span class="heading-sm">Dados para contato</span>
+            </div>
+            <form class="gap flex-col">
+              <div class="text-input">
+                <label class="body-sm flex">Nome</label>
+                <input type="text" placeholder="Nome completo" required>
+                <div class="error">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="#ff5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-circle-alert">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <span class="body-xs">Campo obrigatório</span>
+                </div>
+              </div>
+              <div class="email-tel flex gap">
+                <div class="text-input-email width">
+                  <label class="body-sm flex">E-mail</label>
+                  <input type="text" placeholder="exemplo@email.com" required>
+                  <div class="error">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="#ff5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-circle-alert">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <span class="body-xs">Campo obrigatório</span>
+                  </div>
+                </div>
+                <div class="text-input-tel width">
+                  <label class="body-sm flex">Telefone</label>
+                  <input type="text" placeholder="(99) 99999-9999 " required>
+                  <div class="error">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="#ff5959" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="lucide lucide-circle-alert">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <span class="body-xs">Campo obrigatório</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </search>
+          <footer>
+            <div class="itens-footer">
+              <div class="checbox-footer flex body-sm">
+                <label class="checkbox-footer">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.6868 0.646447C11.8821 0.841709 11.8821 1.15829 11.6868 1.35355L4.35351 8.68689C4.15825 8.88215 3.84167 8.88215 3.64641 8.68689L0.313073 5.35355C0.11781 5.15829 0.11781 4.84171 0.313073 4.64645C0.508335 4.45118 0.824917 4.45118 1.02018 4.64645L3.99996 7.62623L10.9797 0.646447C11.175 0.451184 11.4916 0.451184 11.6868 0.646447Z"
+                      fill="#59B2FF" />
+                  </svg>
+                  <input type="checkbox" name="" id="termos">
+                </label>
+                <label for="termos">
+                  Li e concordo com os
+                  <strong>
+                    <a href="#" class="link-footer">Termos e Condições</a>
+                  </strong>
+                  e com a
+                  <strong>
+                    <a href="#" class="link-footer">Política de Privacidade</a>
+                  </strong>
+                </label>
+              </div>
+              <div class="checbox-footer flex body-sm">
+                <label class="checkbox-footer">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.6868 0.646447C11.8821 0.841709 11.8821 1.15829 11.6868 1.35355L4.35351 8.68689C4.15825 8.88215 3.84167 8.88215 3.64641 8.68689L0.313073 5.35355C0.11781 5.15829 0.11781 4.84171 0.313073 4.64645C0.508335 4.45118 0.824917 4.45118 1.02018 4.64645L3.99996 7.62623L10.9797 0.646447C11.175 0.451184 11.4916 0.451184 11.6868 0.646447Z"
+                      fill="#59B2FF" />
+                  </svg>
+                  <input type="checkbox" name="" id="termos">
+                </label>
+                <label>
+                  Aceito receber atualizações e promoções por e-mail
+                </label>
+              </div>
+              <div class="checbox-footer flex body-sm">
+                <label class="checkbox-footer">
+                  <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M11.6868 0.646447C11.8821 0.841709 11.8821 1.15829 11.6868 1.35355L4.35351 8.68689C4.15825 8.88215 3.84167 8.88215 3.64641 8.68689L0.313073 5.35355C0.11781 5.15829 0.11781 4.84171 0.313073 4.64645C0.508335 4.45118 0.824917 4.45118 1.02018 4.64645L3.99996 7.62623L10.9797 0.646447C11.175 0.451184 11.4916 0.451184 11.6868 0.646447Z"
+                      fill="#59B2FF" />
+                  </svg>
+                  <input type="checkbox" name="" id="termos">
+                </label>
+                <label>
+                  Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+            </div>
+            <div class="button-footer">
+              <button type="submit" class="submit-button">
+                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.71284 1.21284C1.14261 0.783069 1.7255 0.541626 2.33329 0.541626H15.6666C16.2744 0.541626 16.8573 0.783069 17.2871 1.21284C17.7168 1.64261 17.9583 2.2255 17.9583 2.83329V4.49996C17.9583 4.84514 17.6785 5.12496 17.3333 5.12496C16.836 5.12496 16.3591 5.3225 16.0075 5.67413C15.6558 6.02576 15.4583 6.50268 15.4583 6.99996C15.4583 7.49724 15.6558 7.97415 16.0075 8.32578C16.3591 8.67742 16.836 8.87496 17.3333 8.87496C17.6785 8.87496 17.9583 9.15478 17.9583 9.49996V11.1666C17.9583 11.7744 17.7168 12.3573 17.2871 12.7871C16.8573 13.2168 16.2744 13.4583 15.6666 13.4583H2.33329C1.7255 13.4583 1.14261 13.2168 0.71284 12.7871C0.283069 12.3573 0.041626 11.7744 0.041626 11.1666V9.49996C0.041626 9.15478 0.321448 8.87496 0.666626 8.87496C1.16391 8.87496 1.64082 8.67742 1.99245 8.32578C2.34408 7.97415 2.54163 7.49724 2.54163 6.99996C2.54163 6.50268 2.34408 6.02576 1.99245 5.67413C1.64082 5.3225 1.16391 5.12496 0.666626 5.12496C0.321448 5.12496 0.041626 4.84514 0.041626 4.49996V2.83329C0.041626 2.2255 0.283069 1.64261 0.71284 1.21284ZM10.4583 12.2083V11.1666C10.4583 10.8214 10.1785 10.5416 9.83329 10.5416C9.48811 10.5416 9.20829 10.8214 9.20829 11.1666V12.2083H2.33329C2.05703 12.2083 1.79207 12.0985 1.59672 11.9032C1.40137 11.7078 1.29163 11.4429 1.29163 11.1666V10.0618C1.88753 9.94019 2.43985 9.64616 2.87633 9.20967C3.46239 8.62362 3.79163 7.82876 3.79163 6.99996C3.79163 6.17116 3.46239 5.3763 2.87633 4.79025C2.43985 4.35376 1.88753 4.05973 1.29163 3.93808V2.83329C1.29163 2.55703 1.40137 2.29207 1.59672 2.09672C1.79207 1.90137 2.05703 1.79163 2.33329 1.79163H9.20829V2.83329C9.20829 3.17847 9.48811 3.45829 9.83329 3.45829C10.1785 3.45829 10.4583 3.17847 10.4583 2.83329V1.79163H15.6666C15.9429 1.79163 16.2078 1.90137 16.4032 2.09672C16.5985 2.29207 16.7083 2.55703 16.7083 2.83329V3.93808C16.1124 4.05973 15.5601 4.35376 15.1236 4.79025C14.5375 5.3763 14.2083 6.17116 14.2083 6.99996C14.2083 7.82876 14.5375 8.62362 15.1236 9.20967C15.5601 9.64616 16.1124 9.94019 16.7083 10.0618V11.1666C16.7083 11.4429 16.5985 11.7078 16.4032 11.9032C16.2078 12.0985 15.9429 12.2083 15.6666 12.2083H10.4583ZM9.83329 5.54163C10.1785 5.54163 10.4583 5.82145 10.4583 6.16663V7.83329C10.4583 8.17847 10.1785 8.45829 9.83329 8.45829C9.48811 8.45829 9.20829 8.17847 9.20829 7.83329V6.16663C9.20829 5.82145 9.48811 5.54163 9.83329 5.54163Z"
+                    fill="white" />
+                </svg>
+                <span class="body-sm">Gerar convite</span>
+              </button>
+            </div>
+          </footer>
         </fieldset>
       </div>
   </div>

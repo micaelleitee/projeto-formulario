@@ -1,0 +1,21 @@
+.section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section-customization {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & label {
+    color: #ffffff;
+  }
+}
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

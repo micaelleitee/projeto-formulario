@@ -31,8 +31,17 @@
   flex-direction: row;
 }
 
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
 .gap {
   gap: 1rem;
+}
+
+.gap-05 {
+  gap: 0.5rem;
 }
 
 .color-pink {
@@ -48,10 +57,11 @@
   border-radius: 0.5rem;
   background-color: var(--input-base);
   padding: 0.25rem;
+  height: 3rem;
+  overflow: hidden;
 }
 
 .align {
-  gap: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,4 +86,3 @@
 .description {
   grid-area: description;
 }
-
